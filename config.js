@@ -4,5 +4,5 @@ module.exports = {
   twilioPhoneNumber: process.env.TWILIO_PHONE_NUMBER,
   apiKey: process.env.TWILIO_API_KEY,
   apiSecret: process.env.TWILIO_API_SECRET,
-  port: 3001,
+  port: process.env.PORT || 3000,
 };
