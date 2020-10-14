@@ -14,6 +14,8 @@ var call = require('./routes/call');
 var dashboard = require('./routes/dashboard');
 var tickets = require('./routes/tickets');
 var token = require('./routes/token');
+var events = require('./routes/events');
+var recording = require('./routes/recording');
 
 var app = express();
 
@@ -50,6 +52,8 @@ app.use('/call', call);
 app.use('/dashboard', dashboard);
 app.use('/tickets', tickets);
 app.use('/token', token);
+app.use('/events', events);
+app.use('/recording', recording);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
